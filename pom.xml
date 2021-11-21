@@ -12,6 +12,7 @@
         <module>ITSMYCODE</module>
         <module>JavaInterviewQuestionsAndAnswers</module>
         <module>JavaMultiThreading</module>
+        <module>spring-hazlecast-cache</module>
     </modules>
 
     <properties>
