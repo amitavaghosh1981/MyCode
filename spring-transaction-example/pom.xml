@@ -11,7 +11,7 @@
 	<groupId>com.javatechie</groupId>
 	<artifactId>flight-service-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>flight-service-example</name>
+	<name>spring-transaction-example</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

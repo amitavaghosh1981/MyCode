@@ -16,7 +16,7 @@
         <module>kafka-consumer</module>
         <module>kafka-publisher</module>
         <module>spring-boot-cassandra</module>
-        <module>spring-security-jwt-example</module>
+        <!--<module>spring-security-jwt-example</module>-->
         <module>spring-transaction-example</module>
     </modules>
     <properties>
