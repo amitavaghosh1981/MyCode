@@ -7,17 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaInterviewQuestionsAndAnswers" />
-        <module name="spring-hazlecast-cache" />
+        <module name="spring-boot-cassandra" />
         <module name="kafka-consumer" />
-        <module name="ITSMYCODE" />
         <module name="JavaMultiThreading" />
+        <module name="ITSMYCODE" />
+        <module name="JavaInterviewQuestionsAndAnswers" />
+        <module name="spring-transaction-example" />
+        <module name="kafka-publisher" />
+        <module name="spring-hazlecast-cache" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-publisher" options="-parameters" />
+      <module name="spring-boot-cassandra" options="-parameters" />
+      <module name="spring-transaction-example" options="-parameters" />
     </option>
   </component>
 </project>
