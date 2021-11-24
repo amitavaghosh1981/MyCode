@@ -28,16 +28,24 @@ kafka-server-start.bat C:\Code\kafka_2.12-2.2.0\config\server1.properties
 kafka-server-start.bat C:\Code\kafka_2.12-2.2.0\config\server2.properties
 kafka-server-start.bat C:\Code\kafka_2.12-2.2.0\config\server3.properties
 cd C:\Code\kafka_2.12-2.2.0\bin\windows
-kafka-topics.bat --create --zookeeper localhost:2181 -replication-factor 2 --partitions 3 --topic chat-message
+kafka-topics.bat --create --zookeeper localhost:2181 -replication-factor 2 --partitions 3 --topic bara-message
 kafka-topics.bat --zookeeper localhost:2181 --describe --topic chat-message
 
 kafka-console-producer.bat --broker-list localhost:9092,localhost:9093,localhost:9094 --topic chat-message
-kafka-console-consumer.bat --zookeeper localhost:2181 --topic chat-message --from-beginning
+kafka-console-consumer.bat --zookeeper localhost:9092 --topic chat-message --from-beginning
 kafka-console-consumer.bat --bootstrap-server localhost:9092,localhost:9093,localhost:9094 --topic chat-message --from-beginning
-
+kafka-console-consumer.bat --bootstrap-server localhost:9092--topic chat-message --from-beginning
 System Design (HLD)
 https://completedesigninterviewcourse.com/system-design-interview/
 
 LLD
 https://www.udemy.com/course/low-level-system-design-an-interview-perspective/learn/lecture/21421572#overview
 
+kafka-topics.bat --create --zookeeper localhost:2181  -replication-factor 1  --partitions 1 --topic my-message
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-message --from-beginning
+kafka-console-producer.bat --broker-list localhost:9092 --topic my-message
+
+
+kafka-topics.bat --create --zookeeper localhost:2181  -replication-factor 2  --partitions 2 --topic tera-message
+
+---delete topic / delete log in case of any issue
