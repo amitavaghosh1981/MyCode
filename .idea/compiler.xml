@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-cassandra" />
+        <module name="spring-mysql" />
+        <module name="kafka-consumer" />
+        <module name="JavaMultiThreading" />
+        <module name="ITSMYCODE" />
+        <module name="JavaInterviewQuestionsAndAnswers" />
+        <module name="kafka-publisher" />
+        <module name="flight-service-example" />
+        <module name="spring-hazlecast-cache" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="flight-service-example" target="1.8" />
+      <module name="ITSMYCODE" target="8" />
+      <module name="JavaInterviewQuestionsAndAnswers" target="8" />
+      <module name="JavaMultiThreading" target="8" />
+      <module name="kafka-consumer" target="1.8" />
+      <module name="kafka-publisher" target="1.8" />
+      <module name="MyCode" target="8" />
+      <module name="spring-boot-cassandra" target="1.8" />
+      <module name="spring-hazlecast-cache" target="1.8" />
+      <module name="spring-mysql" target="1.8" />
+      <module name="spring-security-jwt-example" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="flight-service-example" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-publisher" options="-parameters" />
+      <module name="spring-boot-cassandra" options="-parameters" />
+    </option>
+  </component>
+</project>

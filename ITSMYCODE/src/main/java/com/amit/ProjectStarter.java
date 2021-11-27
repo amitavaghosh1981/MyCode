@@ -15,11 +15,14 @@ public class ProjectStarter {
         AccountDao accountData = new AccountDao();
         accountData.loadAccounts(countDownLatch);
         try {
-            if (countDownLatch.await(3000, TimeUnit.MILLISECONDS)) {
-                System.out.println("Lets start everything loaded");
+            System.out.println("Waiting");
+            boolean allAppStarted = countDownLatch.await(10000, TimeUnit.MILLISECONDS);
+            if (allAppStarted) {
+                System.out.println("Lets start everything loaded:");
             }
         } catch (InterruptedException e) {
-           throw new RuntimeException("Timeout: Not able to load the data");
+            throw new RuntimeException("Timeout: Not able to load the data");
         }
+        System.out.println( "App cannot be started");
     }
 }
