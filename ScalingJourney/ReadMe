@@ -9,3 +9,15 @@ docker build --tag=firstdockerapp:latest . (cmd)
 8. you can now run multiple container from that image just map them toa different port. (dockerhub)
 docker run -p 8081:8080 firstdockerapp (cmd)
 9. access using localhost:8080/try localhost:8081/try (request will go to different port)
+10. now docker push
+
+--- correction as not able to push the docker to hub
+This is a crucial step that is required before we can upload our image to the repository. As we discussed earlier, Docker follows the naming convention to identify unofficial images. What we are creating is an unofficial image. Hence, it should follow that syntax. According to that naming convention, the unofficial image name should be named as follows: <username>/<image_name>:<tag_name>. In my case, I need to rename it as gauravvv/example_image:latest
+docker tag firstdockerapp:latest imagedockeramitava/image2022:latest
+docker push imagedockeramitava/image2022:latest
+11. docker pull imagedockeramitava/image2022:latest
+
+
+Kubernates
+1.C:\Program Files\Docker\Docker\resources\bin>kubectl get podes
+2.
