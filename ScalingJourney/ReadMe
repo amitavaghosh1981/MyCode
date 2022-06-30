@@ -6,3 +6,6 @@
 docker build --tag=firstdockerapp:latest . (cmd)
 6. now you can see the local image. (dockerhub)
 7.docker run -p 8080:8080 firstdockerapp (cmd)
+8. you can now run multiple container from that image just map them toa different port. (dockerhub)
+docker run -p 8081:8080 firstdockerapp (cmd)
+9. access using localhost:8080/try localhost:8081/try (request will go to different port)

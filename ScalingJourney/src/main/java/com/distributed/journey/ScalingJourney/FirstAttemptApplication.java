@@ -11,7 +11,10 @@ public class FirstAttemptApplication {
 
     @RequestMapping("/try")
     public String home() {
-        return "Hello Docker World";
+        StringBuilder str = new StringBuilder();
+        str.append("Hey-").append(Math.random());
+        System.out.println(str);
+        return str.toString();
     }
 
     public static void main(String[] args) {
