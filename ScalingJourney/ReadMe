@@ -18,6 +18,17 @@ docker push imagedockeramitava/image2022:latest
 11. docker pull imagedockeramitava/image2022:latest
 
 
-Kubernates
+Kubernates (https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-interactive/)
 1.C:\Program Files\Docker\Docker\resources\bin>kubectl get podes
-2.
+2.kubectl create deployment kubernetes-bootcamp --image=imagedockeramitava/image2022:latest
+3.C:\Program Files\Docker\Docker\resources\bin>kubectl get deployments
+  NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
+  kubernetes-bootcamp   1/1     1            1           27s
+
+  C:\Program Files\Docker\Docker\resources\bin>kubectl get nodes
+  NAME             STATUS   ROLES           AGE     VERSION
+  docker-desktop   Ready    control-plane   5h37m   v1.24.0
+
+  C:\Program Files\Docker\Docker\resources\bin>kubectl get pods
+  NAME                                   READY   STATUS    RESTARTS   AGE
+  kubernetes-bootcamp-675b9b5bdd-s9vh2   1/1     Running   0          44s
