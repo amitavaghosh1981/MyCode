@@ -1,0 +1,8 @@
+1. create spring boot application
+2. install docker hub
+3. Repo created imagedockeramitava/image2022
+4. java -jar .\target\ScalingJourney-0.0.1-SNAPSHOT.jar (run and validate) (Terminal)
+5. build image--
+docker build --tag=firstdockerapp:latest . (cmd)
+6. now you can see the local image. (dockerhub)
+7.docker run -p 8080:8080 firstdockerapp (cmd)

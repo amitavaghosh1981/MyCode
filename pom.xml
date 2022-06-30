@@ -16,6 +16,7 @@
         <module>kafka-consumer</module>
         <module>kafka-publisher</module>
         <module>spring-boot-cassandra</module>
+        <module>ScalingJourney</module>
         <!--<module>spring-security-jwt-example</module>-->
         <module>spring-transaction-example</module>
         <module>Spring-boot-mysql</module>
